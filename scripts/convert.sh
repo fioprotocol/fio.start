@@ -4,7 +4,7 @@
 # FIO tools
 #
 # Created by CryptoLions.io
-# Git Hub: https://github.com/fioprotocol/fio.tools
+# Git Hub: https://github.com/fioprotocol/fio.start
 #
 #  Can be used directly from console: 
 #  ./convert.sh <FIO PUB KEY>
