@@ -110,7 +110,7 @@ ln -sf /opt/bin/v1.2.1-2442 /opt/bin/bin
 ```
     mkdir /opt/FioTestnet
     cd /opt/FioTestnet
-    git clone https://github.com/fioprotocol/fio.tools ./
+    git clone https://github.com/fioprotocol/fio.start ./
 
 ```
 
