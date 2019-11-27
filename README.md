@@ -31,7 +31,7 @@ After download, you can install it using apt:
 ```
 apt install ./fio_1.2.1-2442-ubuntu-18.04_amd64.deb   
 ```
-It will download all dependencies and install FIO to `/usr/local/fio/v1.2.1-2442` folder
+It will download all dependencies and install FIO to `/usr/local/fio/v1.2.1-2442` folder.
 
 B. Copy binaries to keep old versions and make sym link to latest:  
 
@@ -72,7 +72,7 @@ cp /opt/FIO/fio/build/programs/cleos/cleos /opt/bin/v1.2.1-2442/
 cp /opt/FIO/fio/build/programs/keosd/keosd /opt/bin/v1.2.1-2442/
 ln -sf /opt/bin/v1.2.1-2442 /opt/bin/bin
 ```
-So /opt/bin/bin will point to latest binaries
+So /opt/bin/bin will point to latest binaries.
 
 ---------------------------------------------------------  
 
@@ -81,9 +81,9 @@ So /opt/bin/bin will point to latest binaries
 
 ## 2.1 Update binaries  
 
-To update precompiled installation please folow the same steps as in 1.1 (Installation from precompiled)  
+To update precompiled installation please follow the same steps as in 1.1 (Installation from precompiled).  
 
-# 2.2 Update sources  
+## 2.2 Update sources  
 
 ```
 cd /opt/FIO/fio
@@ -126,7 +126,7 @@ ln -sf /opt/bin/v1.2.1-2442 /opt/bin/bin
   - Check chain-state-db-size-mb value in config, it should be not bigger than you have RAM:  
     chain-state-db-size-mb = 16384  
   
-- Open TCP Ports (8888, 9876) on your firewall/router  
+- Open TCP Ports (8888, 9876) on your firewall/router.  
 
 - Start wallet, run:
 ```
@@ -145,38 +145,38 @@ Check logs stderr.txt if node is running ok.
 ```
 ./cleos.sh wallet create --to-file pass.txt
 ```
-Your password will be in pass.txt it will be used when unlock wallet  
+Your password will be in pass.txt and will be used when unlocking your wallet.  
 
 
 - Unlock your wallet  
 ```
 ./cleos.sh wallet unlock  
 ```
-enter the wallet password.  
+Enter the wallet password.  
 
 
 - Import your key  
 ```
 ./cleos.sh wallet import
 ```
-Enter your private key  
+Enter your private key. 
 
 
 
-- Check if you can access you node using link http://you_server:8888/v1/chain/get_info (<a href="https://testnet.fioprotocol.io/v1/chain/get_info" target="_blank">Example</a>)  
+- Check if you can access your node using link http://you_server:8888/v1/chain/get_info (<a href="https://testnet.fioprotocol.io/v1/chain/get_info" target="_blank">Example</a>)  
 
 # 4. Registering BP
 
-- create own FIO key pair  
-  you can create key pair using cleos command  
+- Create own FIO key pair.  
+  You can create key pair using cleos command  
   `./cleos.sh create key`  
    or using [monitor](http://monitor.testnet.fioprotocol.io/#createKey) 
-  Store you keypair information includein generated actor name.
-- go to [Faucet](http://monitor.testnet.fioprotocol.io/#faucet) and get free FIO tokens using your generated FIO public key.  
-- using your FIO public key [register your first FIO address](http://monitor.testnet.fioprotocol.io/#account)
-- create new FIO keypair for blocksigning.
-- use your created FIO address in prepared script /scripts/regproducer.sh for BP registration
-- register your node endpoint information in the [FIO monitor](http://monitor.testnet.fioprotocol.io/#register)
+  Store your keypair information including generated actor name.
+- Go to [Faucet](http://monitor.testnet.fioprotocol.io/#faucet) and get free FIO tokens using your generated FIO public key.  
+- Using your FIO public key [register your first FIO address](http://monitor.testnet.fioprotocol.io/#account).
+- Create new FIO keypair for blocksigning.
+- Use your created FIO address in prepared script /scripts/regproducer.sh for BP registration.
+- Register your node endpoint information in the [FIO monitor](http://monitor.testnet.fioprotocol.io/#register).
 
 
 ==============================================================================  
@@ -189,34 +189,34 @@ Enter your private key
    wget  
    wget 
    ```
-   After downloaded extract their
+   After downloading, extract their contents:
    ```
    tar xzvf blocks-latest.tar.gz -C .
    tar xzvf state-latest.tar.gz -C .
    ```
-   You got two folders block and state.  
-   Ater that go to **NODE** folder, and remove files from folder blocks and state
+   You will have two folders block and state.  
+   Next, go to **NODE** folder, and remove files from folder blocks and state:
    ```
    cd /opt/FioTestnet
    rm blocks/*
    rm state/*
    ```
-   After that go where you extracted archive and move file from folder 
+   Next, go where you extracted the archive and move files from folder: 
    ```
    mv ~/blocks/* /opt/FioTestnet/blocks/
    mv ~/state/* /opt/FioTestnet/state/
    ```
-   After files moved start your NODE
+   After the files are moved, start your NODE:
    ```
    ./start.sh
    ```
 # 5.2 Restore/Start from Snapshots
-   Download latest snapshot to snapshots folder in your **NODE** directory
+   Download latest snapshot to snapshots folder in your **NODE** directory:
    ```
    cd /opt/FioTestnet/snapshots/
    wget latest-snapshot.bin
    ```
-   after it downloads run `start.sh` script with option `--snapshot` and snapshot file path
+   After it downloads, run `start.sh` script with option `--snapshot` and snapshot file path:
    ```
    cd /opt/FioTestnet
    ./start.sh --snapshot /opt/FioTestnet/snapshots/latest-snapshot.bin
@@ -225,12 +225,12 @@ Enter your private key
 
 
 # 6. Useful Information  
-  - create own FIO key pair  
-  you can create key pair using cleos command  
+  - Create own FIO key pair.  
+  You can create a FIO key pair using the cleos command:  
   `./cleos.sh create key`  
    or using [monitor](http://monitor.testnet.fioprotocol.io/#createKey) 
 
-   **Store your keypair information including generated actor name.**
+   **Store your keypair information, including generated actor name.**
 
 - [Faucet](http://monitor.testnet.fioprotocol.io/#faucet)
 - [register FIO address](http://monitor.testnet.fioprotocol.io/#account)
@@ -240,5 +240,5 @@ Enter your private key
 - [API endpoints](http://monitor.testnet.fioprotocol.io/#apiendpoints)
 
 # Other Tools/Examples  
-- In [scripts folder](./scripts/) you can find script examples: how to register bp, stake, vote, claimrewards, etc  
-- Vote using monitor.  Monitor can prepare Cleos command, or send the command through Scatter.
+- In [scripts folder](./scripts/) you can find script examples: how to register bp, stake, vote, claimrewards, etc.  
+- Vote using monitor.  Monitor can prepare the cleos command, or send the command through Scatter.
