@@ -25,22 +25,22 @@ ___
 ## 1.1 FIO - installing from precompiled binaries  
 
 A. Download the latest FIO version for Ubuntu-18.04 from [precompiled releases](./releases/)
-For Example: fio_1.2.1-2442-ubuntu-18.04_amd64.deb              
+For Example: fioprotocol_1.2.1-2442-ubuntu-18.04_amd64.deb              
 
 After download, you can install it using apt:  
 ```
-apt install ./fio_1.2.1-2442-ubuntu-18.04_amd64.deb   
+apt install ./fioprotocol_1.2.1-2442-ubuntu-18.04_amd64.deb   
 ```
-It will download all dependencies and install FIO to `/usr/local/fio/v1.2.1-2442` folder.
+It will download all dependencies and install FIO to `/usr/local/fioprotocol/v1.2.1-2442` folder.
 
 B. Copy binaries to keep old versions and make sym link to latest:  
 
 ```
  mkdir /opt/bin
  mkdir /opt/bin/v1.2.1-2442
- cp /usr/local/fio/v1.2.1-2442/bin/nodeos /opt/bin/v1.2.1-2442/
- cp /usr/local/fio/v1.2.1-2442/bin/cleos /opt/bin/v1.2.1-2442/
- cp /usr/local/fio/v1.2.1-2442/bin/keosd /opt/bin/v1.2.1-2442/
+ cp /usr/local/fioprotocol/v1.2.1-2442/bin/nodeos /opt/bin/v1.2.1-2442/
+ cp /usr/local/fioprotocol/v1.2.1-2442/bin/cleos /opt/bin/v1.2.1-2442/
+ cp /usr/local/fioprotocol/v1.2.1-2442/bin/keosd /opt/bin/v1.2.1-2442/
  ln -sf /opt/bin/v1.2.1-2442 /opt/bin/bin
 ```
 
