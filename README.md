@@ -25,7 +25,7 @@ ___
 ## 1.1 FIO - installing from precompiled binaries  
 
 A. Download the latest FIO version for Ubuntu-18.04 from [precompiled releases](./releases/)
-For Example: fioprotocol_1.2.1-2442-ubuntu-18.04_amd64.              
+For Example: fioprotocol_1.2.1-2442-ubuntu-18.04_amd64.deb              
 
 After download, you can install it using apt:  
 ```
