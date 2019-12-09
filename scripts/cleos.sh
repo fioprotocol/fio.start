@@ -21,4 +21,4 @@ NODEPORT="443"
 
 
 
-$FIOBINDIR/cleos -u https://$NODEHOST:$NODEPORT --wallet-url http://$WALLETHOST:$WALLETPORT "$@"
+$FIOBINDIR/clio -u https://$NODEHOST:$NODEPORT --wallet-url http://$WALLETHOST:$WALLETPORT "$@"

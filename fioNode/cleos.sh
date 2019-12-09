@@ -16,4 +16,4 @@ WALLETPORT="3000"
 
 
 
-$NODEOSBINDIR/cleos -u http://$NODEHOST:$NODEPORT --wallet-url http://$WALLETHOST:$WALLETPORT "$@"
+$NODEOSBINDIR/clio -u http://$NODEHOST:$NODEPORT --wallet-url http://$WALLETHOST:$WALLETPORT "$@"
