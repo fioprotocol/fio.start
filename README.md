@@ -1,7 +1,7 @@
 # Welcome to the FIO Testnet [manual node installation]  
 
-Chain ID: 88694aece2bb4ab345e76337fda58f9cf7a8f72f924d4e94f31e3f450a61467e  
-Based on tag: v1.2.1-2442
+Chain ID: c8f1b9de4c310a29161ff74df79d03ea7a5d48462af94041302bd4972bda9e54  
+Based on tag: v0.6.0
 
 
 Network Monitor: https://monitor.testnet.fioprotocol.io  
