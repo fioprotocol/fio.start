@@ -8,7 +8,7 @@
 #
 ###############################################################################
 
-DIR="/opt/FioTestnet/fioWallet"
+DIR="/opt/fioWallet"
 
     if [ -f $DIR"/wallet.pid" ]; then
         pid=$(cat $DIR"/wallet.pid")

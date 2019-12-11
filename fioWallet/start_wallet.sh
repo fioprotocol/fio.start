@@ -9,7 +9,7 @@
 ###############################################################################
 
 NODEOSBINDIR="/opt/bin/bin"
-DATADIR="/opt/FioTestnet/fioWallet"
+DATADIR="/opt/fioWallet"
 WALLET_HOST="127.0.0.1"
 WALLET_POSRT="3000"
 
