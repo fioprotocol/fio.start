@@ -7,7 +7,7 @@
 # Git Hub: https://github.com/fioprotocol/fio.start
 #
 ###############################################################################
-DIR="/opt/FioTestnet"
+DIR="/opt/fioNode"
 
     if [ -f $DIR"/nodeos.pid" ]; then
 	pid=`cat $DIR"/nodeos.pid"`
