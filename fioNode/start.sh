@@ -9,7 +9,7 @@
 ###############################################################################
 
 NODEOSBINDIR="/opt/bin/bin"
-DATADIR="/opt/fioNode"
+DATADIR="/opt/FioTestnet/fioNode"
 
 $DATADIR/stop.sh
 echo -e "Starting Nodeos \n";
