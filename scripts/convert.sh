@@ -19,7 +19,7 @@ if [[ $1 != "" ]]; then
     fioPubKey=$1
 fi
 
-./cleos.sh convert fiokey_to_account $fioPubKey
+./clio.sh convert fiokey_to_account $fioPubKey
 
 #Example
-#./cleos.sh convert fiokey_to_account FIO6dibuddHN5fioh3VczFXWJq4M3quFjvXoRKR5S9BwgxLNaYf5L
+#./clio.sh convert fiokey_to_account FIO6dibuddHN5fioh3VczFXWJq4M3quFjvXoRKR5S9BwgxLNaYf5L
