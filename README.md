@@ -25,23 +25,23 @@ ___
 ## 1.1 FIO - installing from precompiled binaries  
 
 A. Download the latest FIO version for Ubuntu-18.04 from [precompiled releases](./releases/)
-For Example: fioprotocol_1.2.1-2442-ubuntu-18.04_amd64.deb              
+For Example: fioprotocol_0.6.0-ubuntu-18.04_amd64.deb              
 
 After download, you can install it using apt:  
 ```
-apt install ./fioprotocol_1.2.1-2442-ubuntu-18.04_amd64.deb   
+apt install ./fioprotocol_0.6.0-ubuntu-18.04_amd64.deb   
 ```
-It will download all dependencies and install FIO to `/usr/local/fioprotocol/v1.2.1-2442` folder.
+It will download all dependencies and install FIO to `/usr/local/fioprotocol/v0.6.0` folder.
 
 B. Copy binaries to keep old versions and make sym link to latest:  
 
 ```
  mkdir /opt/bin
- mkdir /opt/bin/v1.2.1-2442
- cp /usr/local/fioprotocol/v1.2.1-2442/bin/nodeos /opt/bin/v1.2.1-2442/
- cp /usr/local/fioprotocol/v1.2.1-2442/bin/cleos /opt/bin/v1.2.1-2442/
- cp /usr/local/fioprotocol/v1.2.1-2442/bin/keosd /opt/bin/v1.2.1-2442/
- ln -sf /opt/bin/v1.2.1-2442 /opt/bin/bin
+ mkdir /opt/bin/v0.6.0
+ cp /usr/local/fioprotocol/v0.6.0/bin/nodeos /opt/bin/v0.6.0/
+ cp /usr/local/fioprotocol/v0.6.0/bin/cleos /opt/bin/v0.6.0/
+ cp /usr/local/fioprotocol/v0.6.0/bin/keosd /opt/bin/v0.6.0/
+ ln -sf /opt/bin/v0.6.0 /opt/bin/bin
 ```
 
 So /opt/bin/bin will point to latest binaries  
@@ -66,11 +66,11 @@ git submodule update --init --recursive
 B. Copy binaries to keep old versions and make sym link to latest:
 ```
 mkdir /opt/bin
-mkdir /opt/bin/v1.2.1-2442
-cp /opt/FIO/fio/build/programs/nodeos/nodeos /opt/bin/v1.2.1-2442/
-cp /opt/FIO/fio/build/programs/cleos/cleos /opt/bin/v1.2.1-2442/
-cp /opt/FIO/fio/build/programs/keosd/keosd /opt/bin/v1.2.1-2442/
-ln -sf /opt/bin/v1.2.1-2442 /opt/bin/bin
+mkdir /opt/bin/v0.6.0
+cp /opt/FIO/fio/build/programs/nodeos/nodeos /opt/bin/v0.6.0/
+cp /opt/FIO/fio/build/programs/cleos/cleos /opt/bin/v0.6.0/
+cp /opt/FIO/fio/build/programs/keosd/keosd /opt/bin/v0.6.0/
+ln -sf /opt/bin/v0.6.0 /opt/bin/bin
 ```
 So /opt/bin/bin will point to latest binaries.
 
@@ -97,9 +97,9 @@ git submodule update --init --recursive
 ./scripts/fioio_build.sh -y
 
 mkdir /opt/bin/
-cp /opt/FIO/fio/build/programs/nodeos/nodeos /opt/bin/v1.2.1-2442/
-cp /opt/FIO/fio/build/programs/cleos/cleos /opt/bin/v1.2.1-2442/
-cp /opt/FIO/fio/build/programs/keosd/keosd /opt/bin/v1.2.1-2442/
+cp /opt/FIO/fio/build/programs/nodeos/nodeos /opt/bin/v0.6.0/
+cp /opt/FIO/fio/build/programs/cleos/cleos /opt/bin/v0.6.0/
+cp /opt/FIO/fio/build/programs/keosd/keosd /opt/bin/v0.6.0/
 ln -sf /opt/bin/v1.2.1-2442 /opt/bin/bin
 ```  
  
