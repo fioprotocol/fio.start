@@ -38,9 +38,9 @@ B. Copy binaries to keep old versions and make sym link to latest:
 ```
  mkdir /opt/bin
  mkdir /opt/bin/v0.6.0-2
- cp /usr/local/fioprotocol/v0.6.0-2/bin/nodeos /opt/bin/v0.6.0/
- cp /usr/local/fioprotocol/v0.6.0-2/bin/cleos /opt/bin/v0.6.0/
- cp /usr/local/fioprotocol/v0.6.0-2/bin/keosd /opt/bin/v0.6.0/
+ cp /usr/local/fioprotocol/v0.6.0-2/bin/nodeos /opt/bin/v0.6.0-2/
+ cp /usr/local/fioprotocol/v0.6.0-2/bin/cleos /opt/bin/v0.6.0-2/
+ cp /usr/local/fioprotocol/v0.6.0-2/bin/keosd /opt/bin/v0.6.0-2/
  ln -sf /opt/bin/v0.6.0-2 /opt/bin/bin
 ```
 
