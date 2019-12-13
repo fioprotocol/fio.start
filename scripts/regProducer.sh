@@ -8,9 +8,14 @@
 #
 ###############################################################################
 
+# actor is hash from pub key which was used for FIO Address registration.
+# To convert key to actor name you can use clio:
+#./clio.sh convert fiokey_to_account FIO6dibuddHN5fioh3VczFXWJq4M3quFjvXoRKR5S9BwgxLNaYf5L
+
 fioAddress="cryptolions:fiotestnet"
-signkey="FIO6dibuddHN5fioh3VczFXWJq4M3quFjvXoRKR5S9BwgxLNaYf5L"
 actor=5tyuyv241iup
+
+signkey="FIO6dibuddHN5fioh3VczFXWJq4M3quFjvXoRKR5S9BwgxLNaYf5L"
 url="bpurl.io"
 location=10
 maxfee=40000000000
