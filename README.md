@@ -119,7 +119,7 @@ ln -sf /opt/bin/v1.2.1-2442 /opt/bin/bin
 - Edit fioNode/config.ini:  
   - server address (replace with your external domain/ip):  
         `p2p-server-address = ENRT_YOUR_NODE_EXTERNAL_IP_ADDRESS:9876`  
-  - if BP: your producer name: producer-name = YOUR_BP_NAME  
+  - if BP: your producer name: producer-name = YOUR_BP_NAME (this is the FIO internal account or "actor" name which is the hash of the public key)
   - if BP: add producer keypair for signing blocks (this pub key should be used in regproducer action):  
   `signature-provider = YOUR_PUB_KEY_HERE=KEY:YOUR_PRIV_KEY_HERE`  
   - replace p2p-peer-address list with fresh generated on [monitor site](https://monitor.testnet.fioprotocol.io/#p2p)  
