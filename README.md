@@ -1,7 +1,7 @@
 # Welcome to the FIO Testnet [manual node installation]  
 
-Chain ID: c8f1b9de4c310a29161ff74df79d03ea7a5d48462af94041302bd4972bda9e54  
-Based on tag: v0.6.0-2
+Chain ID: 4e46572250454b796d7296eec9e8896327ea82dd40f2cd74cf1b1d8ba90bcd77  
+Based on tag: v0.8.0
 
 
 Network Monitor: https://monitor.testnet.fioprotocol.io  
@@ -29,7 +29,7 @@ For Example: fioprotocol_0.6.0-2-ubuntu-18.04_amd64.deb
 
 After download, you can install it using apt:  
 ```
-apt install ./fioprotocol_0.6.0-2-ubuntu-18.04_amd64.deb   
+apt install ./fioprotocol_0.8.0-ubuntu-18.04_amd64.deb   
 ```
 It will download all dependencies and install FIO to `/usr/local/fioprotocol/v0.6.0-2` folder.
 
@@ -37,11 +37,11 @@ B. Copy binaries to keep old versions and make sym link to latest:
 
 ```
  mkdir /opt/bin
- mkdir /opt/bin/v0.6.0-2
- cp /usr/local/fioprotocol/v0.6.0-2/bin/nodeos /opt/bin/v0.6.0-2/
- cp /usr/local/fioprotocol/v0.6.0-2/bin/cleos /opt/bin/v0.6.0-2/
- cp /usr/local/fioprotocol/v0.6.0-2/bin/keosd /opt/bin/v0.6.0-2/
- ln -sf /opt/bin/v0.6.0-2 /opt/bin/bin
+ mkdir /opt/bin/v0.8.0
+ cp /usr/local/fioprotocol/v0.8.0/bin/nodeos /opt/bin/v0.8.0/
+ cp /usr/local/fioprotocol/v0.8.0/bin/cleos /opt/bin/v0.8.0/
+ cp /usr/local/fioprotocol/v0.8.0/bin/keosd /opt/bin/v0.8.0/
+ ln -sf /opt/bin/v0.8.0 /opt/bin/bin
 ```
 
 So /opt/bin/bin will point to latest binaries  
@@ -66,11 +66,11 @@ git submodule update --init --recursive
 B. Copy binaries to keep old versions and make sym link to latest:
 ```
 mkdir /opt/bin
-mkdir /opt/bin/v0.6.0-2
-cp /opt/FIO/fio/build/programs/nodeos/nodeos /opt/bin/v0.6.0-2/
-cp /opt/FIO/fio/build/programs/cleos/cleos /opt/bin/v0.6.0-2/
-cp /opt/FIO/fio/build/programs/keosd/keosd /opt/bin/v0.6.0-2/
-ln -sf /opt/bin/v0.6.0-2 /opt/bin/bin
+mkdir /opt/bin/v0.8.0
+cp /opt/FIO/fio/build/programs/nodeos/nodeos /opt/bin/v0.8.0/
+cp /opt/FIO/fio/build/programs/cleos/cleos /opt/bin/v0.8.0/
+cp /opt/FIO/fio/build/programs/keosd/keosd /opt/bin/v0.8.0/
+ln -sf /opt/bin/v0.8.0 /opt/bin/bin
 ```
 So /opt/bin/bin will point to latest binaries.
 
@@ -97,10 +97,10 @@ git submodule update --init --recursive
 ./scripts/fioio_build.sh -y
 
 mkdir /opt/bin/
-cp /opt/FIO/fio/build/programs/nodeos/nodeos /opt/bin/v0.6.0-2/
-cp /opt/FIO/fio/build/programs/cleos/cleos /opt/bin/v0.6.0-2/
-cp /opt/FIO/fio/build/programs/keosd/keosd /opt/bin/v0.6.0-2/
-ln -sf /opt/bin/v1.2.1-2442 /opt/bin/bin
+cp /opt/FIO/fio/build/programs/nodeos/nodeos /opt/bin/v0.8.0/
+cp /opt/FIO/fio/build/programs/cleos/cleos /opt/bin/v0.8.0/
+cp /opt/FIO/fio/build/programs/keosd/keosd /opt/bin/v0.8.0/
+ln -sf /opt/bin/v0.8.0 /opt/bin/bin
 ```  
  
 ------------------------------------------------------------------  
