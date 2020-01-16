@@ -56,10 +56,10 @@ cd /opt/FIO
 git clone https://github.com/fioprotocol/fio --recursive    
 cd fio  
 
-git checkout   
+git checkout release/0.8.x   
 git submodule update --init --recursive   
 
-./scripts/fioio_build.sh -y
+./scripts/fio_build.sh -y
 
 ```
 
@@ -90,11 +90,11 @@ cd /opt/FIO/fio
 git checkout -f
 git branch -f
 git pull
-git checkout v0.8.0-3
+git checkout release/0.8.x
 git submodule update --init --recursive   
 
-./scripts/fioio_uninstall.sh  
-./scripts/fioio_build.sh -y
+./scripts/fio_uninstall.sh  
+./scripts/fio_build.sh -y
 
 mkdir /opt/bin/
 cp /opt/FIO/fio/build/programs/nodeos/nodeos /opt/bin/v0.8.0-3/
