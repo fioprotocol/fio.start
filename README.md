@@ -39,7 +39,7 @@ B. Copy binaries to keep old versions and make sym link to latest:
  mkdir /opt/bin
  mkdir /opt/bin/v0.9.0-1
  cp /usr/local/fioprotocol/v0.9.0-1/bin/nodeos /opt/bin/v0.9.0-1/
- cp /usr/local/fioprotocol/v0.9.0-1/bin/cleos /opt/bin/v0.9.0-1/
+ cp /usr/local/fioprotocol/v0.9.0-1/bin/clio /opt/bin/v0.9.0-1/
  cp /usr/local/fioprotocol/v0.9.0-1/bin/keosd /opt/bin/v0.9.0-1/
  ln -sf /opt/bin/v0.9.0-1 /opt/bin/bin
 ```
@@ -67,7 +67,7 @@ B. Copy binaries to keep old versions and make sym link to latest:
 mkdir /opt/bin
 mkdir /opt/bin/v0.9.0-1
 cp /opt/FIO/fio/build/programs/nodeos/nodeos /opt/bin/v0.9.0-1/
-cp /opt/FIO/fio/build/programs/cleos/cleos /opt/bin/v0.9.0-1/
+cp /opt/FIO/fio/build/programs/clio/clio /opt/bin/v0.9.0-1/
 cp /opt/FIO/fio/build/programs/keosd/keosd /opt/bin/v0.9.0-1/
 ln -sf /opt/bin/v0.9.0-1 /opt/bin/bin
 ```
@@ -97,7 +97,7 @@ git submodule update --init --recursive
 
 mkdir /opt/bin/
 cp /opt/FIO/fio/build/programs/nodeos/nodeos /opt/bin/v0.9.0-1/
-cp /opt/FIO/fio/build/programs/cleos/cleos /opt/bin/v0.9.0-1/
+cp /opt/FIO/fio/build/programs/clio/clio /opt/bin/v0.9.0-1/
 cp /opt/FIO/fio/build/programs/keosd/keosd /opt/bin/v0.9.0-1/
 ln -sf /opt/bin/v0.9.0-1 /opt/bin/bin
 ```  
