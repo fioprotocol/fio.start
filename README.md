@@ -113,7 +113,7 @@ ln -sf /opt/bin/v0.9.0-1 /opt/bin/bin
 
 ```
 
-- In case you use a different data-dir folders -> edit all paths in files fioNode/cleos.sh, fioNode/start.sh, fioNode/stop.sh, fioNode/config.ini, fioWallet/start_wallet.sh, fioWallet/stop_wallet.sh  
+- In case you use a different data-dir folders -> edit all paths in files fioNode/clio.sh, fioNode/start.sh, fioNode/stop.sh, fioNode/config.ini, fioWallet/start_wallet.sh, fioWallet/stop_wallet.sh  
 
 - Edit fioNode/config.ini:  
   - server address (replace with your external domain/ip):  
@@ -142,21 +142,21 @@ Check logs stderr.txt if node is running ok.
 
 - Create your wallet file  
 ```
-./cleos.sh wallet create --to-file pass.txt
+./clio.sh wallet create --to-file pass.txt
 ```
 Your password will be in pass.txt and will be used when unlocking your wallet.  
 
 
 - Unlock your wallet  
 ```
-./cleos.sh wallet unlock  
+./clio.sh wallet unlock  
 ```
 Enter the wallet password.  
 
 
 - Import your key  
 ```
-./cleos.sh wallet import
+./clio.sh wallet import
 ```
 Enter your private key. 
 
@@ -167,8 +167,8 @@ Enter your private key.
 # 4. Registering BP
 
 - Create own FIO key pair.  
-  You can create key pair using cleos command  
-  `./cleos.sh create key`  
+  You can create key pair using clio command  
+  `./clio.sh create key`  
    or using [monitor](http://monitor.testnet.fioprotocol.io/#createKey) 
   Store your keypair information including generated actor name.
 - Go to [Faucet](http://monitor.testnet.fioprotocol.io/#faucet) and get free FIO tokens using your generated FIO public key.  
@@ -225,8 +225,8 @@ Enter your private key.
 
 # 6. Useful Information  
   - Create own FIO key pair.  
-  You can create a FIO key pair using the cleos command:  
-  `./cleos.sh create key`  
+  You can create a FIO key pair using the clio command:  
+  `./clio.sh create key`  
    or using [monitor](http://monitor.testnet.fioprotocol.io/#createKey) 
 
    **Store your keypair information, including generated actor name.**
@@ -240,4 +240,4 @@ Enter your private key.
 
 # Other Tools/Examples  
 - In [scripts folder](./scripts/) you can find script examples: how to register bp, stake, vote, claimrewards, etc.  
-- Vote using monitor.  Monitor can prepare the cleos command, or send the command through Scatter.
+- Vote using monitor.  Monitor can prepare the clio command, or send the command through Scatter.

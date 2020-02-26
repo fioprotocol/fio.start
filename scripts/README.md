@@ -1,6 +1,6 @@
 # FIO scripts
 
-clio.sh - wraper for cleos (edit to set api and wallet endpoints)  
+clio.sh - wraper for clio (edit to set api and wallet endpoints)  
 
 convert.sh <pubKey> - converts Fio Pubkey to actor name  
 regProducer.sh - block producer registartion  
