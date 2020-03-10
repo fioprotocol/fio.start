@@ -1,6 +1,6 @@
 # Welcome to the FIO Testnet [manual node installation]  
 
-Chain ID:   
+Chain ID: b20901380af44ef59c5918439a1f9a41d83669020319a80574b804a5f95cbd7e  
 Based on tag: v0.9.2  
 
 
