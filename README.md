@@ -201,7 +201,7 @@ Edit **fioNode/config.ini** again, and modify these settings:
 
 ## Start the FIO node
 
-The first run should be with `--delete-all-block` and `--genesis-json`.@
+The first run should be with `--delete-all-block` and `--genesis-json`.
 
 ```
 cd /opt/FioTestnet/fioNode
