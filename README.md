@@ -146,7 +146,7 @@ cd /opt/FioTestnet
 Next, create your wallet file. This file will hold your private keys, the password will be the encryption key to your wallet.
 
 ```
-cd cd /opt/FioTestnet/fioNode
+cd /opt/FioTestnet/fioNode
 ./clio.sh wallet create -f pass.txt
 ```
 
