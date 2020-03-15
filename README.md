@@ -35,7 +35,7 @@ apt install ./fioprotocol_0.9.2-ubuntu-18.04_amd64.deb
 
 It will download all dependencies and install FIO to `/usr/local/fioprotocol/v0.9.2` folder.
 
-### 1.1.2 Copy binaries to keep old versions and make symlink to latest
+### 1.1.2 Copy binaries to keep old versions and make/change symlink to latest
 
 ```
  mkdir /opt/bin
@@ -130,7 +130,7 @@ Now modify the config as such.
 
         p2p-server-address = ENRT_YOUR_NODE_EXTERNAL_IP_ADDRESS:9876
 
-  - replace p2p-peer-address list with fresh generated on [the monitor site](https://monitor.testnet.fioprotocol.io/#p2p).
+  - replace p2p-peer-address list with a fresh list generated on [the monitor site](https://monitor.testnet.fioprotocol.io/#p2p).
 
 ## Generate the addresses & keys for your BP
 
@@ -167,7 +167,7 @@ Now, create 2 new keys.
 ./clio.sh create key -f bp-block-signing.txt
 ```
 
-Import the `bp-owner.txt` one to your wallet, the block signing key should never be imported!
+Import `bp-owner.txt` to your wallet, the block signing key should never be imported!
 
 ```
 ./clio.sh wallet import --private-key 5K....
@@ -183,15 +183,15 @@ Edit **fioNode/config.ini** again, and modify these settings:
 
     Replace `YOUR_BP_NAME` with the Actor Name from the `bp-owner.txt` key you just created.
 
-  - if you are a BP: add producer keypair for signing blocks. This same pub key should be used in regproducer action:
+  - if you are a BP, add the producer keypair for signing blocks. This same pub key should be used in regproducer action:
 
         signature-provider = YOUR_PUB_KEY_HERE=KEY:YOUR_PRIV_KEY_HERE
 
-    This is the public & private key from the `bp-block-signing.txt` file. For instance:
+    This is the public & private key from the `bp-block-signing.txt` file. For example:
 
-        signature-provider = FIO7cA3GSRH5GfUp63o5dfXX7EUvgfqC4jFjL5McD5r3KqkDABAau=KEY:5JiVVpSDv4UYEPnjkKDN42mAY2n9m4ZUKoeq7nqKfuk5NpGygr5
+        signature-provider = FIO7cA3GS...=KEY:5JiVVpSDv...
 
-    Where `FIO7cA3GSRH5GfUp63o5dfXX7EUvgfqC4jFjL5McD5r3KqkDABAau` is your public key and `5JiVVpSDv4UYEPnjkKDN42mAY2n9m4ZUKoeq7nqKfuk5NpGygr5` is your private key.
+    Where `FIO7cA3GS...` is your public key and `5JiVVpSDv...` is your private key.
 
   - Check chain-state-db-size-mb value in config, it should not be bigger than your available RAM:
 
@@ -229,7 +229,7 @@ Now check if you can access your node using link `http://you_server:8888/v1/chai
 
   Once modified, execute the script as `./regProducer.sh`.
 
-- Register your node endpoint information in the [FIO monitor](http://monitor.testnet.fioprotocol.io/#register).
+- Register your node endpoint information in the [FIO monitor](http://monitor.testnet.fioprotocol.io/#register). By registering your node, you can see the status of your BP node in the monitor. If you don't register, you will get a "_An invalid request was sent in, please check the nested errors for details_" error when you click on your BP node.
 
 # 5 Backups
 
@@ -258,7 +258,7 @@ rm blocks/*
 rm state/*
 ```
 
-Next, go where you extracted the archive and move files from folder:
+Next, go to where you extracted the archive and move the files from folder:
 
 ```
 mv ~/blocks/* /opt/FioTestnet/blocks/
