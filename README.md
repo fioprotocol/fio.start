@@ -147,7 +147,7 @@ Next, create your wallet file. This file will hold your private keys, the passwo
 
 ```
 cd cd /opt/FioTestnet/fioNode
-./clio.sh wallet create --to-file pass.txt
+./clio.sh wallet create -f pass.txt
 ```
 
 Your password will now be in the `pass.txt` file and will be used when unlocking your wallet. Keep this secure.
