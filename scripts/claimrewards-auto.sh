@@ -12,7 +12,7 @@ v2endpoint=https://fio.eossweden.org
 fioAddress="bp@zenblocks"
 actor=p5fi5ywnitjc
 
-lastclaimed=$(curl -X GET "$v2endpoint/v2/history/get_actions?account=$actor&filter=fio.treasury%3Abpclaim&limit=1&sort=desc&simple=true" -H "accept: application/json" | jq .simple_actions[0].timestamp -r)
+lastclaimed=$(curl -X GET "$v2endpoint/v2/history/get_actions?account=$actor&filter=fio.treasury%3Abpclaim&limit=1&sort=desc&simple=true" -H "accept: application/json" | jq .simple_actions[].timestamp -r)
 #lastclaimed=$(curl -X GET "https://api.waxsweden.org/v2/history/get_actions?account=zenblockswax&filter=eosio%3Aclaimrewards&sort=desc&simple=true" -H "accept: application/json" | jq .simple_actions[0].timestamp -r)
 
 if [ ! -z "$lastclaimed" ]
